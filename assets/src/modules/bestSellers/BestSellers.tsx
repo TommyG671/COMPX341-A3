@@ -38,8 +38,8 @@ export default class BestSellers extends React.Component<BestSellersProps, BestS
       });
     } catch(error) {
       alert(error);
-   /*  }
-  } */ 
+    }
+  }  
 
   render() {
     return (
