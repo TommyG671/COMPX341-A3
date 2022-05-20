@@ -16,6 +16,6 @@ if ($null -ne $args[0]) {
 
 }
 else {
-    Write-Output "Please enter a commit message"
+    Write-Output "Please enter a commit message in speech marks"
 }
 
