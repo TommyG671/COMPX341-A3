@@ -1,14 +1,19 @@
-npm install
-npm run build
-
-if ($? -eq $true){
-    cd..
-    git add -A
-    git commit -m "COMPX341-22A-A3 Commiting from CI/CD Pipeline"
-    git push 
-    cd assets 
-    npm run start
+if ($null -ne $args[0]) {
+    npm install
+    npm run build
+    if ($? -eq $true){
+        cd..
+        git add -A
+        git commit -m $args[0]
+        git push 
+        cd assets 
+        npm run start
+    }
+    else {
+        Write-Output "Compile Errors occurred, failed to commit"
+    }
 }
 else {
-    Write-Output "Compile Errors occurred, failed to commit"
-} 
+    Write-Output "Please enter a commit message in speech marks"
+}
+
