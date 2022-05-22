@@ -1,4 +1,4 @@
-//
+//Name: Thomas Griffin. ID: 1539604
 export const categories = {
   cooks: "Cookbooks",
   database: "Database",

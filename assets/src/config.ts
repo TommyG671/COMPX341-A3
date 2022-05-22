@@ -1,4 +1,4 @@
-//
+//Name: Thomas Griffin. ID: 1539604
 export default {
   apiGateway: {
     REGION: "us-east-1",
